@@ -8,7 +8,7 @@ import { Component, OnInit } from "@angular/core";
 export class SiderBarComponent implements OnInit {
   
   mainMenu: {defaultOptions: Array<any>, accessLink: Array<any>
-  } = { defaultOptions: [], accessLink: [] }
+  } = { defaultOptions: [], accessLink: []  }
 
   customOptions: Array<any> = []
 

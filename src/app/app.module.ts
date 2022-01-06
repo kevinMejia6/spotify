@@ -3,16 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomePageComponent } from '@modules/home/pages/home-page/home-page.component';
+import { HomeModule } from '@modules/home/home.module';
 
 @NgModule({
   declarations: [//PODEMOS DECLARAR COMPONENTES, DIRECTI
-    AppComponent,
-    // HomePageComponent
+    AppComponent
+    
     ],
   imports: [//SOLO SE IMPORTAN OTROS MODULOS
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    //THIS WAS THE MISTAKE
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,7 +11,9 @@ import { HomePageComponent } from '@modules/home/pages/home-page/home-page.compo
     CommonModule
   ],
   exports:[
-    SiderBarComponent
+    SiderBarComponent,
+    MediaPlayerComponent,
+    HeaderUserComponent
   ]
 })
 export class SharedModule { }
