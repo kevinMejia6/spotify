@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TrackModel } from '@core/models/tracks.model';
 
 @Component({
   selector: 'app-media-player',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./media-player.component.css']
 })
 export class MediaPlayerComponent implements OnInit {
-mockCover:any=
- { cover:'https://los40.com/los40/imagenes/2021/11/10/musica/1636523871_501730_1636524134_gigante_normal.jpg',
-  album:'Hello',
-  name:'ITS ME(<3)'
+mockCover:TrackModel=
+ { cover:'https://lh3.googleusercontent.com/cEM30LuA_J57jLpeA9QpyKmylMSlR4mhMLDUnozjuGY-g7m-62Yw9shW84UZVG510HtXNw=s85',
+  album:'By Kevin ❤',
+  name:'Pretty Girl',
+  url:'http://localhost/tracks.mp3',
+  _id:1,
+  
 }
   constructor() { }
 
